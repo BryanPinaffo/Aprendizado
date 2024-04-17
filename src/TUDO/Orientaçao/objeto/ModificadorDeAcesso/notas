@@ -1,0 +1,13 @@
+so criei isso para ficar bonitinho
+
+enfim, aprendendo modificador de acesso privado
+
+
+so lembrando, modificador de aceesso:
+
+public : tem um alto nivel de acoplamento, no caso, a PessoaTeste01 consegue conversar e entender todos os atributos da Pessoa.java
+// acoplamento = o quao uma classe esta conectada com a outra
+
+private: atributos so serao acessados pelo objeto(classes, mais facil entender)
+resumidamente, o private, a psvm ( onde vc vai criar seu main), nao consegue acessar
+apenas as coisas q estao dentro do objeto consegue acessalo
