@@ -20,6 +20,7 @@ public class Time01 {
     public void imprime(){
 
         System.out.println(this.nome);
+        System.out.println("jogadores: ");
 
         if(jogadores == null) return;
 
