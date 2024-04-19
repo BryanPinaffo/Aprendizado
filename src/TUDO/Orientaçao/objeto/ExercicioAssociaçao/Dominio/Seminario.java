@@ -1,6 +1,8 @@
 package TUDO.Orientaçao.objeto.ExercicioAssociaçao.Dominio;
 
-public class Seminarios {
+import java.util.Arrays;
+
+public class Seminario {
 
     private String titituloSeminario;
 
@@ -8,8 +10,11 @@ public class Seminarios {
 
     private Estudantes [] nome ;
 
+    public String getTitituloSeminario() {
+        return titituloSeminario;
+    }
 
-    public Seminarios (String titituloSeminario){
+    public Seminario(String titituloSeminario){
 
         this.titituloSeminario = titituloSeminario;
 
@@ -19,7 +24,7 @@ public class Seminarios {
 
         System.out.println("o titulo é: " + titituloSeminario);
         System.out.println("o endereço é: "+ local);
-        System.out.println("os alunos sao: " + nome);
+        System.out.println("os alunos sao: " + Arrays.toString(nome));
 
 
     }

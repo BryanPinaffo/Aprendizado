@@ -5,7 +5,7 @@ public class Estudantes {
    private String nome;
     private int idade;
 
-    private String seminario;
+    private Seminario seminario;
 
 
     public Estudantes(String nome){
@@ -31,11 +31,11 @@ public class Estudantes {
         this.idade = idade;
     }
 
-    public String getSeminario() {
+    public Seminario getSeminario() {
         return seminario;
     }
 
-    public void setSeminario(String seminario) {
+    public void setSeminario(Seminario seminario) {
         this.seminario = seminario;
     }
 
