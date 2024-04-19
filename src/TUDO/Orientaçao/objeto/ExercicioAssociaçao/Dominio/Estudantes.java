@@ -18,7 +18,7 @@ public class Estudantes {
 
         System.out.println("nome do aluno: "+ nome);
         System.out.println("sua idade: " + idade);
-        System.out.println("nome do seminario: "+ seminario);
+        System.out.println("nome do seminario: "+ seminario.getTitituloSeminario());
 
 
     }

@@ -24,7 +24,7 @@ public class GerenciadorSeminario {
         aluno.setIdade(20);
 
         professor.setEspecialidade("CHATO");
-        professor.setSeminario(semina);
+        professor.setSeminario(seminario);
 
         seminario.setNome(alunos);
 

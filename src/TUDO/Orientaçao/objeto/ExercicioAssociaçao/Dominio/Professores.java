@@ -5,7 +5,7 @@ public class Professores {
     private String nome;
     private String especialidade;
 
-    private Seminario [] seminario ;
+    private Seminario  seminario ;
 
     public Professores (String nome){
 
@@ -18,7 +18,7 @@ public class Professores {
         System.out.println("sua especialidade é: "+ especialidade);
 
 
-            System.out.println("seminarios administrados" + seminario);
+            System.out.println("seminarios administrados" + seminario.getTitituloSeminario());
 
     }
 
@@ -30,11 +30,11 @@ public class Professores {
         this.especialidade = especialidade;
     }
 
-    public Seminario[] getSeminario() {
+    public Seminario getSeminario() {
         return seminario;
     }
 
     public void setSeminario(Seminario seminario) {
-        this.seminario = new Seminario[]{seminario};
+        this.seminario = seminario;
     }
 }
