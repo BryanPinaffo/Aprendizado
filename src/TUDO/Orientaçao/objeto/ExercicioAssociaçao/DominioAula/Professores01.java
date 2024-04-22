@@ -43,11 +43,12 @@ public class Professores01 {
                 System.out.println("titulo: " + semina.getTitituloSeminario());
                 System.out.println("endereço: "+ semina.getLocal01().getEndereco());
 
-                if(semina.getEstudantes01s() == null || semina.getEstudantes01s().length == 0){
+                if(semina.getEstudantes01s() == null){
 
                     continue;
                 }
                 else {
+                    semina.getEstudantes01s();
                     for(Estudantes01 aluno : semina.getEstudantes01s()) {
 
                         System.out.println("**Alunos**");

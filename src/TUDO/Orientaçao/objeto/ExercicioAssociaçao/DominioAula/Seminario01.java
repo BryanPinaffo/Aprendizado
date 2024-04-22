@@ -9,15 +9,10 @@ public class Seminario01 {
     private Local01 local01 ;
 
 
-    public Seminario01(String titituloSeminario){
+    public Seminario01(String titituloSeminario,Local01 local01){
 
         this.titituloSeminario = titituloSeminario;
-
-    }
-    public Seminario01 ( String titituloSeminario, Estudantes01 [] estudantes01s){
-
-        this.titituloSeminario = titituloSeminario;
-        this.estudantes01s = estudantes01s;
+        this.local01 = local01;
 
     }
 
