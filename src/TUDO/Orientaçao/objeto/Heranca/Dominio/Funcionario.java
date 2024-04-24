@@ -6,16 +6,19 @@ public class Funcionario extends Pessoa { // nao pode extender mais de uma class
     // evitar ao maximo usar herença, ja que oq vc fizer de modificaçao na classe Pessoa, vai ser modificado tbem nos seus extends
 
     // herenca nao funciona dentro de um metodo static
+
+    // todas as classes extends object (para se tornar um objeto), logo, vc so pode extender mais uma classe (extends object)
     private double salario;
 
     public Funcionario(String nome,String cpf){
 
-        super(nome, cpf);
+        super(nome, cpf); // tem que ser a primeira linha do construtor
 
 
 
 
     }
+
 
     public void imprime(){ // eu quero executar tudo q tem no metodo pessoa MAIS oq vai ser executado agora nesse metodo
 
@@ -40,3 +43,6 @@ public class Funcionario extends Pessoa { // nao pode extender mais de uma class
         this.salario = salario;
     }
 }
+
+// todas as vezes que vc adiciona um construtor na sua classe mae
+// se esse construtor tem argumento, obrigatoriamente vc precisa alterar em todas as classes filhas
