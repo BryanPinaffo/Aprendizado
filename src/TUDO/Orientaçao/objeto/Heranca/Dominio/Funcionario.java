@@ -14,6 +14,8 @@ public class Funcionario extends Pessoa { // nao pode extender mais de uma class
 
         super(nome, cpf); // tem que ser a primeira linha do construtor
 
+        System.out.println("dentro do construtor funcionario");
+
 
 
 
