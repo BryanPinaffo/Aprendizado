@@ -15,7 +15,7 @@ public class Cliente {
     @Override
     public String toString() {
         return " nome Cliente: "
-                + nome + "\n" + tipoCliente.tipoPessoa+", \n"
+                + nome + "\n" + tipoCliente.getNomeRelatorio()+", \n"
                 + tipoCliente.VALOR +
                 ", tipo de Pagamento= " + tipoPagamento;
     }

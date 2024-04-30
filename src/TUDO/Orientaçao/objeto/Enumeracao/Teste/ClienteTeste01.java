@@ -16,6 +16,15 @@ public class ClienteTeste01 {
         System.out.println(TipoPagamento.DEBITO.calcularDesconto(100));
         System.out.println(TipoPagamento.CREDITO.calcularDesconto(100));
 
+        TipoCliente tipoCliente01 = TipoCliente.valueOf("PEESOA_FISICA");
+
+        System.out.println(tipoCliente01);
+
+        TipoCliente tipoCliente02 = TipoCliente.tipoClientePorNomeRelatorio("PESSOA_JURIDICA");
+        System.out.println(tipoCliente02);
+
+
+
 
     }
 }
