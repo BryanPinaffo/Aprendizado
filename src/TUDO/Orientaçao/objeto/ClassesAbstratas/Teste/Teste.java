@@ -10,6 +10,8 @@ public class Teste {
         Desenvolvedor desenvolvedor = new Desenvolvedor("Bryan",10000);
         System.out.println(gerente);
         System.out.println(desenvolvedor);
+        gerente.imprime();
+        desenvolvedor.imprime();
 
 
     }
