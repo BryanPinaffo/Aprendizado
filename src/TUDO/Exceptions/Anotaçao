@@ -1,0 +1,11 @@
+//tudo que acontece de ruim no sistema, de forma geral
+Throwable {
+
+        Error - sao situaçoes onde nao tem como vc se recuperar, como erro de memoria erro de disco.
+        vc precisa parar o programa e resolver o problema para depois iniciar novamente
+
+        stackoverflow - limite de memoria ram
+
+        exception -
+
+}
