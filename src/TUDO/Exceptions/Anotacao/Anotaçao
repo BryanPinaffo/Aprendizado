@@ -1,0 +1,25 @@
+//tudo que acontece de ruim no sistema, de forma geral
+Throwable {
+
+        Error - sao situaçoes onde nao tem como vc se recuperar, como erro de memoria erro de disco.
+        vc precisa parar o programa e resolver o problema para depois iniciar novamente
+
+        stackoverflow - limite de memoria ram
+
+        exception - aquilo que altera o fluxo normal da execuçao do programa
+        ----------------------------------------------------------------------------------------------------------------
+        EXCEPTION:
+
+        existem exception checadas e nao checadas
+
+        checked e unchecked
+
+        checked : sao filhas da classe exception diretamente, se nao tratadas elas vao lançar um erro em tempo de complilaçao,
+         resumindo, vc nao cosnegue compilar seu codigo
+
+         unchecked: (RunTimeException), quase 100% das vezes é vc, algo que vc desenvolveu errado, como
+         tentar acessar uma linha de array que nao existe, fazer divisao por zero usando int, entre outras coisa.
+         (nao precisa fazer validaçao para o condigo complar)
+
+
+}

@@ -7,21 +7,21 @@ public class StackOverFlowTeste01 {
         recursividade02();
 
 
-
     }
 
 
-    public static void recursividade(){
+    public static void recursividade() {
 
 
-            recursividade();
+        recursividade();
 
 
     }
-    public static void recursividade02(){
+
+    public static void recursividade02() {
 
 
-            recursividade02();
+        recursividade02();
 
 
     }
