@@ -22,6 +22,9 @@ public class RuntimeExceptionTest02 {
             throw new IllegalArgumentException("argumento ilegal, nao pode ser zero"); // é para mostrar o erro para quem for mexer
             // throw new, quando vc quer lançar uma excessao
             // quando usado, nao precisa colocar throws no metodo para ter como aviso, isso apenas para RunTimeException
+            // resumidamente, quando alguem for usar seu metodo ou algo que tenha throw new, ela vai ser avisada sobre aquiço
+            // e vai criar um tratamento
+            // isso serve mais quando as pessoas podem ter tipos de tratamento personalizado.
         }
 
         return a/b;

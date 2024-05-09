@@ -4,8 +4,15 @@ import java.io.File;
 import java.io.IOException;
 
 public class ExceptionTest02 {
-    public static void main(String[] args) throws IOException {
-        criarNovoArquivo();
+    public static void main(String[] args)  {
+        // dando um exemplo de passando o exception para outra pessoa.
+        try {
+            criarNovoArquivo();
+        }
+        catch (IOException e){
+
+            System.out.println("o arquivo nao foi criado corretamente");
+        }
 
 
     }
@@ -16,16 +23,31 @@ public class ExceptionTest02 {
         // porem se for publico, entao seria bom usar o throws, pois isso depende de quem vai chamar e de como ele vai querer tratar o exception
 
         File file = new File("arquivo\\teste.txt");
+
+            boolean isCriado = file.createNewFile();
+            System.out.println("arquivo criado " + isCriado);
+            System.out.println("o arquivo nao foi criado corretamente");
+
+    }
+
+    /*
+    private static void criarNovoArquivo() throws IOException {
+
+        File file = new File("arquivo\\teste.txt");
+
         try {
             boolean isCriado = file.createNewFile();
             System.out.println("arquivo criado " + isCriado);
-        } catch (IOException e) {
+        } catch (IOException e) { // sempre pegar as excessoes mais especificas
 
             System.out.println("o arquivo nao foi criado corretamente");
-            e.printStackTrace(); // exibe no console a excessao
-            throw e; // exibe tbem
+            e.printStackTrace();
+            throw e; // ele mostra a excessao mesmo tratando ela
+
         }
 
 
     }
+     */
+
 }

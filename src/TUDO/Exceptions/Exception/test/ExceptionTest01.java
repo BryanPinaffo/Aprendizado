@@ -10,17 +10,36 @@ public class ExceptionTest01 {
 
     }
 
-    private static void criarNovoArquivo() {
+    private static void criarNovoArquivo()  {
 
-        File file = new File("arquivo\\teste.txt");
-        try {
-            boolean isCriado = file.createNewFile();
-            System.out.println("arquivo criado " + isCriado);
-        } catch (IOException e) { // sempre pegar as excessoes mais especificas
+        int documento = 0;
+        int i = 1;
 
-            System.out.println("o arquivo nao foi criado corretamente");
-            e.printStackTrace();
+
+        while ( documento < i){
+
+            String nomeDoArquivo = "arquivo\\teste" + i +".txt";
+
+            File file = new File(nomeDoArquivo);
+
+            try {
+                boolean isCriado = file.createNewFile();
+                System.out.println("arquivo criado " + isCriado);
+            } catch (IOException e) { // sempre pegar as excessoes mais especificas
+
+                System.out.println("o arquivo nao foi criado corretamente");
+                e.printStackTrace();
+
+            }
+
+            if (file.delete()){
+
+                System.out.println("deletado");
+            }
+            i++;
         }
+
+
 
 
     }
