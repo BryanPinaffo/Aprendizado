@@ -21,5 +21,9 @@ Throwable {
          tentar acessar uma linha de array que nao existe, fazer divisao por zero usando int, entre outras coisa.
          (nao precisa fazer validaçao para o condigo complar)
 
+         -------------------------------------------------------
+         tipos de exception:
+         IOexception - erro de entrada ou saida de dados, como nao encontrar um novo 
+
 
 }

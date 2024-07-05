@@ -37,9 +37,10 @@ public class ExceptionMulti {
             System.out.println(z);
 
 
-        } catch (RuntimeException e){
+        } catch (ArithmeticException e){
 
             System.out.println("jesus, funcionou");
+            e.printStackTrace();
 
         }
 
