@@ -9,6 +9,7 @@ public class StringTeste01 {
         // string sao imutaveis
 
         nome = nome.concat("Susane"); // concatanaçao, sempre tem que ser passado
+        //mesmo que fazer: nome += "Susane"
         //precisa estar tomando cuidado quando se associa um novo valor a variavel de referencia
 
         System.out.println(nome == nome2); // Batata esta alocado no mesmo espaço em memoria para nome e nome2
