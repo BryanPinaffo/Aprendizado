@@ -1,4 +1,4 @@
-package TUDO.Classes.Utilitarias.Date;
+package TUDO.Classes.Utilitarias.Date.FormatacaoTest;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -15,14 +15,14 @@ public class DateFormatTest01 {
 
         System.out.println("-----------------separaçao------------------");
 
-       dataEHora();
+        dataEHora();
 
     }
 
-    public static void dataEHora(){
+    public static void dataEHora() {
         Calendar calendar = Calendar.getInstance();  // calendar é uma classe que permite manipular facilmente partes de uma data
 
-        DateFormat [] df = new DateFormat[7]; // formata de uma maneira especifica, geralmente em string, sendo mais legiveis para as pessoas
+        DateFormat[] df = new DateFormat[7]; // formata de uma maneira especifica, geralmente em string, sendo mais legiveis para as pessoas
 
 
         df[0] = DateFormat.getInstance();
