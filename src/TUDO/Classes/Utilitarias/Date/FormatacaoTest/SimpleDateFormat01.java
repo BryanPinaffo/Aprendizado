@@ -6,9 +6,8 @@ import java.util.Date;
 public class SimpleDateFormat01 {
     public static void main(String[] args) {
 
-        int infinito = 356;
         int i = 0;
-        while (infinito > 10) {
+        while (true) {
 
             i++;
 
